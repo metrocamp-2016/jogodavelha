@@ -1,0 +1,44 @@
+@define-mixin hide_text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@define-mixin make_grid $screen {
+   @for $i from 1 to 12 {
+        .col-$(screen)-$(i){
+            lost-column: $i/12 division(12, $i);
+        }
+   }
+}
+
+@define-mixin make_screen_utilities $screen {
+   .$(screen)-align-center {
+     lost-align: center;       
+   }
+}
+
+@define-mixin media_screen $screen, $min, $max  {
+
+    @if $min > 0 {
+        @media screen and (width > $min) {
+           @mixin make_grid $(screen);
+        }
+    }
+    @else {
+        @mixin make_grid $(screen);
+    }
+    
+
+    @media screen and (width > $min) and (width <= $max) {
+       @mixin make_screen_utilities $(screen);
+       .hide-$(screen) {
+            display:none;
+       }
+
+       .show-$(screen) {
+            display: block;
+       }
+    }
+}
+

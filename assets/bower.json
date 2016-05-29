@@ -1,0 +1,50 @@
+{
+  "name": "assets",
+  "description": "Test Project to Elo 7",
+  "main": "index.js",
+  "authors": [
+    "Shankar Nakai"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Test",
+    "HTML5",
+    "SASS",
+    "Gulp",
+    "Vanilla",
+    "JS",
+    "TDD"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bLazy": "blazy#~1.5.2",
+    "font-awesome": "~4.5.0",
+    "gsap": "^1.18.2",
+    "normalize-css": "^3.0.3",
+    "modernizr": "~3.2.0",
+    "html5shiv": "~3.7.3",
+    "fastclick": "~1.0.6",
+    "angular": "1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  },
+  "devDependencies": {
+    "angular-animate": "^1.5.0",
+    "angular-cookies": "^1.5.0",
+    "angular-sanitize": "^1.5.0",
+    "angular-scenario": "^1.5.0",
+    "Slidebars": "^0.10.3",
+    "owlcarousel": "owl-carousel#^1.3.2",
+    "jquery": "^2.2.2"
+  }
+}

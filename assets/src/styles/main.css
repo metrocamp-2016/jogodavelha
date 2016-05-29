@@ -1,0 +1,9 @@
+@import "global/all";
+
+
+@import "layouts/pagination";
+@import "layouts/effects";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/container";
+

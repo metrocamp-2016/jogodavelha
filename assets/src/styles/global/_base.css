@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background : $background-color;
+    font-family: $font-family ;
+    color : $gray;
+}
+
+h1, h2, h3, h4, h5 {
+    color: $title-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+a {
+    color: $link-color;
+    text-decoration:none;
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+form {
+    text-align:left;
+    input[type='text'],
+    input[type='email'],
+    input[type='file'],    
+
+    textarea,
+    select {
+        width:100%;
+        padding:5px 10px;
+        margin-bottom:10px;
+    }
+}
+
+.container {
+    lost-utility: clearfix;
+    lost-center: 1140px 15px no-flex;
+}
+
+.row {
+    lost-utility: clearfix;
+    width: 100%;
+}
+
+.page_title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.align-center {
+    text-align: center;
+}
+/*
+ * GRID
+ * */
+@mixin media_screen xs, $screen-xs-min, $screen-xs-max;
+@mixin media_screen ms, $screen-ms-min, $screen-ms-max;
+@mixin media_screen sm, $screen-sm-min, $screen-sm-max;
+@mixin media_screen md, $screen-md-min, $screen-md-max;
+@mixin media_screen lg, $screen-lg-min, $screen-lg-max;
