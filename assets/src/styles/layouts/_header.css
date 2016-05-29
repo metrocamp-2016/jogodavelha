@@ -234,3 +234,43 @@ header {
 #header__top .header_title_store {
     font-weight: bold;
 }
+
+.cronograma {
+   width: 100%; 
+   thead {
+    border:1px solid #333;
+    background: #333;
+    color:#FFF;
+    padding:10px 0px;
+    text-align:center;
+   }
+
+   td {
+    border-right:1px solid #333;
+   }
+
+   tr {
+    border-bottom: 1px solid #333;
+   }
+
+   .label {
+    background: #333;
+    color:#FFF;
+    padding:10px 10px;
+    width:250px;
+   }
+
+   .level {
+    background: #CCC;
+        &.is-easy {
+            background:#005500;
+        }
+        &.is-medium {
+            background: #FFBB00;
+        }
+        &.is-hard {
+            background: #FF0000;
+        }
+
+   }
+}
